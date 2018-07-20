@@ -21,7 +21,7 @@ namespace issuesapi
         {
             app.UseCors(builder =>
                         builder.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader()
-    );
+        );
 
             app.UseDefaultFiles();
             app.UseStaticFiles();

@@ -12,3 +12,4 @@
 /Users/alexunger/Projects/angularcoreapp/issuesapi/obj/Debug/netcoreapp2.1/issuesapi.RazorTargetAssemblyInfo.cache
 /Users/alexunger/Projects/angularcoreapp/issuesapi/obj/Debug/netcoreapp2.1/issuesapi.dll
 /Users/alexunger/Projects/angularcoreapp/issuesapi/obj/Debug/netcoreapp2.1/issuesapi.pdb
+/Users/alexunger/Projects/angularcoreapp/issuesapi/bin/Debug/netcoreapp2.1/nlog.config

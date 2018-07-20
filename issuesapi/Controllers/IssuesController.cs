@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using issuesapi.Models;
+using Microsoft.Extensions.Logging;
 
 namespace issuesapi.Controllers
 {
@@ -10,10 +11,12 @@ namespace issuesapi.Controllers
     public class IssuesController : ControllerBase
     {
         private readonly IssueContext _context;
+        private readonly ILogger<IssuesController> _logger;
 
-        public IssuesController(IssueContext context)
+        public IssuesController(IssueContext context, ILogger<IssuesController> logger)
         {
             _context = context;
+            _logger = logger;
 
             if (_context.Issues.Count() == 0)
             {
@@ -25,6 +28,7 @@ namespace issuesapi.Controllers
         [HttpGet]
         public ActionResult<List<Issues>> GetAll()
         {
+            //_logger.LogWarning("This is a test of the GetAll method",)
             return _context.Issues.ToList();
         }
 
